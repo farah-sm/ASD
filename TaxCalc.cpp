@@ -10,9 +10,10 @@ int main() {
     double stSales = (stateTax / 10) * sales;
     double ctSales = (countyTax / 10) * sales;
  
-    
+    double ttTax = ((stateTax / 10) + (countyTax / 10)) * sales;
     
     cout << "Total sales = $" << sales << endl
          << "Sales after State Tax Deduction = $" << stSales << endl
-         << "Sales after County Tax Deduction = $" << ctSales;
+         << "Sales after County Tax Deduction = $" << ctSales << endl
+         << "Sales after Total Tax Deduction = $" << ttTax;
 }
